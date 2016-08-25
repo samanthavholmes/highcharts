@@ -1,2 +1,5 @@
-<%= high_chart_globals(@chart_globals) %>
-<%= high_chart("some_id", @chart) %>
+<%= content_tag :div, class: "totals", data: {ranges: @ranges, most_recent: @most_recent, max: @max} do %>
+<% end %>
+
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
