@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root 'charts#index'
+  root 'welcome#index'
+  get '/arearanges' => 'arearanges#index'
+  post 'arearanges' => 'arearanges#index'
+  get '/heatmaps' => 'heatmaps#index'
+  post 'heatmaps' => 'heatmaps#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

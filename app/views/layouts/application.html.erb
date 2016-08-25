@@ -4,14 +4,26 @@
   <title>HighchartsApp</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application' %>
+  <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">PayMyTab</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/arearanges">Area Range</a></li>
+      <li><a href="/heatmaps">HeatMap</a></li>
+    </ul>
+  </div>
+</nav>
 
 <%= yield %>
 
