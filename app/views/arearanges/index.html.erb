@@ -1,0 +1,10 @@
+<%= content_tag :div, class: "totals", data: {ranges: @ranges, most_recent: @most_recent, max: @max, timeframe: @timeframe, averages: @averages} do %>
+<% end %>
+
+<% if @error %>
+  <h5 class="error"><%= @error %></h5>
+<% end %>
+
+<form action= "/arearanges" method="post" id="options">
+    <%= render partial: "shared/user_options" %>
+<div id="arearange"></div>

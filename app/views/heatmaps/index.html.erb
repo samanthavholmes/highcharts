@@ -1,0 +1,8 @@
+<% if @error %>
+  <h5 class="error"><%= @error %></h5>
+<% end %>
+
+<form action= "/heatmaps" method="post" id="options">
+    <%= render partial: "shared/user_options" %>
+
+<div id="heatmap"></div>

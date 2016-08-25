@@ -17,3 +17,46 @@
 @import "materialize/components/color";
 $primary-color: color("blue", "lighten-2") !default;
 @import 'materialize';
+
+.arearange {
+  min-width: 310px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 2%
+}
+
+#heatmap {
+  height: 400px;
+  min-width: 310px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+#submit-button {
+  margin-top: 1.5%;
+}
+
+#dropdown-form {
+  margin-left: 15%;
+}
+
+.error {
+  color: #D8000C;
+  text-align: center;
+}
+
+#week-day-option {
+  margin-top: 2%;
+  margin-left: 40%;
+  margin-bottom: 2%;
+}
+
+#day-button {
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
